@@ -9,12 +9,12 @@ def create_pos_n_neg():
         for img in os.listdir(file_type):
 
             if file_type == 'pos':
-                line = file_type + '/' + img + ' 1 0 0 40 107\n'
-                with open('info_r.dat', 'a') as f:
+                line = file_type + '/' + img + ' 1 0 0 40 99\n'
+                with open('info_ob.dat', 'a') as f:
                     f.write(line)
             elif file_type == 'neg150':
                 line = file_type + '/' + img + '\n'
-                with open('bg_r.txt', 'a') as f:
+                with open('bg_ob.txt', 'a') as f:
                     f.write(line)
 
 create_pos_n_neg()
